@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOD Suprimentos - Seu Rancho na Porta de Casa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a class="logo" href="#">
+    <div class="logo-icon">LOD</div>
+    <div class="logo-text">
+      <div class="brand">LOD</div>
+      <div class="sub">Suprimentos</div>
+    </div>
+  </a>
+  <button class="hamburger" onclick="openMenu()">☰</button>
+</nav>
+
+<!-- MENU MOBILE -->
+<div class="nav-menu" id="navMenu">
+  <button class="nav-close" onclick="closeMenu()">✕</button>
+  <div class="nav-links">
+    <a href="#beneficios" onclick="closeMenu()">Benefícios</a>
+    <a href="#sobre" onclick="closeMenu()">Sobre</a>
+    <a href="#como-funciona" onclick="closeMenu()">Como Funciona</a>
+    <a href="#contato" onclick="closeMenu()">Contato</a>
+  </div>
+  <button class="btn-nav" onclick="closeMenu()">Peça Seu Rancho</button>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🛒 Rancho na Porta de Casa</div>
+  <h1>Seu Supermercado Completo, Todo Mês, Sem Sair de Casa</h1>
+  <p>Receba um rancho completo e de qualidade diretamente na sua porta. Praticidade, economia e confiança para sua família.</p>
+  <a href="#contato" class="btn-primary">Peça Seu Rancho Agora</a>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="benefits" id="beneficios">
+  <h2 class="section-title">Por Que Escolher a LOD Suprimentos?</h2>
+  <p class="section-sub">Oferecemos soluções completas para suas compras de supermercado com praticidade, qualidade e preços imbatíveis.</p>
+
+  <div class="card">
+    <div class="card-icon">🛒</div>
+    <h3>Kit Alimentação Completo e de Qualidade</h3>
+    <p>Todos os produtos essenciais para sua família em um único rancho.</p>
+    <br><a href="#contato" style="color: var(--green); font-weight: 700; font-size: 14px;">Ver Lista Completa →</a>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">🚚</div>
+    <h3>Entrega Todo Mês em Domicílio</h3>
+    <p>Receba suas compras na porta de casa, sem sair para ir ao supermercado.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">📅</div>
+    <h3>Compra Antecipada Sem Juros</h3>
+    <p>Pague antecipado e aproveite preços especiais sem nenhum juro.</p>
+  </div>
+
+  <div class="card" style="display: flex; align-items: flex-start; gap: 16px;">
+    <div style="background: var(--green); border-radius: 10px; padding: 10px 12px; color: white; font-size: 18px; flex-shrink:0;">✓</div>
+    <div>
+      <h3>Sem Consulta SPC / Serasa</h3>
+      <p>Compre com tranquilidade, sem preocupação com consultas ao SPC ou Serasa.</p>
+    </div>
+  </div>
+
+  <div class="card" style="display: flex; align-items: flex-start; gap: 16px;">
+    <div style="background: var(--green); border-radius: 10px; padding: 10px 12px; color: white; font-size: 18px; flex-shrink:0;">✓</div>
+    <div>
+      <h3>Cesta Grande por Preço Baixo</h3>
+      <p>Economize comprando em volume com preços especiais e competitivos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="how-works" id="como-funciona">
+  <h2 class="section-title">Como Funciona</h2>
+  <p class="section-sub">Simples, rápido e conveniente. Veja como é fácil receber seu rancho em casa.</p>
+
+  <div class="step-card">
+    <div class="step-num">1</div>
+    <h3>Escolha Seu Rancho</h3>
+    <p>Selecione um de nossos ranchos completos ou personalize sua compra de acordo com suas necessidades.</p>
+  </div>
+
+  <div class="step-card">
+    <div class="step-num">2</div>
+    <h3>Receba em Casa</h3>
+    <p>Após o pagamento, agendamos a entrega no horário mais conveniente para você.</p>
+  </div>
+
+  <div class="step-card">
+    <div class="step-num">3</div>
+    <h3>Aproveite com Economia</h3>
+    <p>Receba produtos de qualidade todo mês sem precisar sair de casa e economize no seu orçamento.</p>
+  </div>
+</section>
+
+<!-- ETAPAS -->
+<section class="etapas-section">
+  <h2 class="section-title">Seu Rancho em 4 Etapas</h2>
+  <br>
+  <div class="etapa-item">
+    <div class="etapa-num">1</div>
+    <h3>Você Escolhe</h3>
+    <p>Seu rancho ideal</p>
+  </div>
+  <div class="etapa-item">
+    <div class="etapa-num">2</div>
+    <h3>Nós Preparamos</h3>
+    <p>Com qualidade</p>
+  </div>
+  <div class="etapa-item">
+    <div class="etapa-num">3</div>
+    <h3>Entregamos</h3>
+    <p>Na sua porta</p>
+  </div>
+  <div class="etapa-item">
+    <div class="etapa-num">4</div>
+    <h3>Você Aproveita</h3>
+    <p>Com economia</p>
+  </div>
+</section>
+
+<!-- COMO TRABALHAMOS -->
+<section class="como-trab">
+  <h2 class="section-title">Como Trabalhamos</h2>
+  <p class="section-sub">Nosso processo garante qualidade, confiabilidade e satisfação em cada entrega.</p>
+
+  <div class="icon-card">
+    <div class="ic">📦</div>
+    <h3>Seleção Rigorosa</h3>
+    <p>Escolhemos os melhores produtos de fornecedores confiáveis para garantir qualidade.</p>
+  </div>
+
+  <div class="icon-card">
+    <div class="ic">✔️</div>
+    <h3>Controle de Qualidade</h3>
+    <p>Cada item passa por inspeção rigorosa antes de ser embalado para você.</p>
+  </div>
+
+  <div class="icon-card">
+    <div class="ic">🚛</div>
+    <h3>Logística Eficiente</h3>
+    <p>Entrega rápida e segura direto na sua porta, todo mês, no horário combinado.</p>
+  </div>
+
+  <div class="icon-card">
+    <div class="ic">💚</div>
+    <h3>Atendimento Dedicado</h3>
+    <p>Equipe sempre pronta para ajudar com dúvidas e resolver qualquer problema.</p>
+  </div>
+
+  <div class="quality-banner">
+    <h3>Comprometidos com a Qualidade</h3>
+    <p>Cada rancho é cuidadosamente preparado com produtos selecionados para garantir a melhor experiência para sua família.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">🛡️</div>
+    <h3>100% Seguro</h3>
+    <p>Seus dados são protegidos com segurança de ponta.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">✔️</div>
+    <h3>Garantia de Qualidade</h3>
+    <p>Todos os produtos passam por rigoroso controle.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">🚚</div>
+    <h3>Entrega Garantida</h3>
+    <p>Entregamos conforme prometido, sempre no prazo.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">💬</div>
+    <h3>Suporte 24/7</h3>
+    <p>Equipe sempre pronta para ajudar via WhatsApp.</p>
+  </div>
+</section>
+
+<!-- SOBRE NÓS -->
+<section class="sobre" id="sobre">
+  <h2 class="section-title">Sobre Nós</h2>
+  <p class="section-sub">Conheça a história e a missão da LOD Suprimentos</p>
+
+  <div class="check-item">
+    <div class="check-title">
+      <span class="icon">✔</span>
+      <h3>Nossa Missão</h3>
+    </div>
+    <p>Facilitar a vida das famílias brasileiras oferecendo compras de supermercado completas, de qualidade e com preços acessíveis. Acreditamos que toda família merece conveniência e economia.</p>
+  </div>
+
+  <div class="check-item">
+    <div class="check-title">
+      <span class="icon">✔</span>
+      <h3>Nossa Visão</h3>
+    </div>
+    <p>Ser a solução número um para compras de supermercado projetadas no Brasil, levando praticidade e economia para cada lar.</p>
+  </div>
+
+  <div class="check-item">
+    <div class="check-title">
+      <span class="icon">✔</span>
+      <h3>Nossos Valores</h3>
+    </div>
+    <ul class="values-list">
+      <li>Qualidade em cada produto</li>
+      <li>Transparência e confiança</li>
+      <li>Compromisso com o cliente</li>
+      <li>Inovação contínua</li>
+    </ul>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-num">+5K</div>
+      <div class="stat-label">Famílias Atendidas</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Satisfação</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">12+</div>
+      <div class="stat-label">Anos de Experiência</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Suporte</div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="depoimentos">
+  <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+  <p class="section-sub">Confira os depoimentos de famílias que já confiam na LOD Suprimentos</p>
+
+  <div class="review-card">
+    <div class="stars">★★★★★</div>
+    <blockquote>"A LOD Suprimentos mudou minha vida! Não preciso mais gastar tempo indo ao supermercado. Recebo tudo em casa com qualidade e preço baixo."</blockquote>
+    <div class="reviewer">
+      <strong>Maria Silva</strong>
+      <span>Mãe de 2 filhos</span>
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="stars">★★★★★</div>
+    <blockquote>"Excelente serviço! Confiável, pontual e com produtos de primeira qualidade. Recomendo para todas as famílias."</blockquote>
+    <div class="reviewer">
+      <strong>João Santos</strong>
+      <span>Empresário</span>
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="stars">★★★★★</div>
+    <blockquote>"Adorei! O rancho completo é perfeito para minha família. Economizo muito e ainda ganho tempo. Muito obrigada!"</blockquote>
+    <div class="reviewer">
+      <strong>Ana Costa</strong>
+      <span>Dona de Casa</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BANNER -->
+<div class="stats-banner">
+  <span class="stat-big">+5.000</span>
+  <div class="stat-label-big">Famílias Satisfeitas</div>
+  <span class="stat-big">100%</span>
+  <div class="stat-label-big">Satisfação Garantida</div>
+  <span class="stat-big">12+</span>
+  <div class="stat-label-big">Anos de Confiança</div>
+</div>
+
+<!-- FAQ -->
+<section class="faq">
+  <h2 class="section-title">Perguntas Frequentes</h2>
+  <p class="section-sub">Tire suas dúvidas sobre nossos serviços e como funciona a LOD Suprimentos</p>
+
+  <div class="faq-item open">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      Como funciona o sistema de compra?
+      <span class="faq-arrow">▲</span>
+    </button>
+    <div class="faq-answer">
+      Você escolhe um de nossos ranchos completos, realiza o pagamento e recebe tudo entregue na sua porta todo mês. É simples, prático e seguro!
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      Qual é o valor mínimo de compra?
+      <span class="faq-arrow">▼</span>
+    </button>
+    <div class="faq-answer">
+      Entre em contato conosco para conhecer nossas opções de ranchos e valores disponíveis para a sua região.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      Vocês fazem entrega em toda região?
+      <span class="faq-arrow">▼</span>
+    </button>
+    <div class="faq-answer">
+      Atendemos diversas regiões. Entre em contato para verificar a disponibilidade na sua cidade.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      Posso personalizar meu rancho?
+      <span class="faq-arrow">▼</span>
+    </button>
+    <div class="faq-answer">
+      Sim! Você pode selecionar um rancho completo ou personalizar sua compra de acordo com as necessidades da sua família.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      Qual é o prazo de entrega?
+      <span class="faq-arrow">▼</span>
+    </button>
+    <div class="faq-answer">
+      A entrega é combinada com você no momento do pedido. Trabalhamos para sempre cumprir o prazo acordado.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      Como é o atendimento ao cliente?
+      <span class="faq-arrow">▼</span>
+    </button>
+    <div class="faq-answer">
+      Nosso atendimento é feito via WhatsApp 24 horas por dia, 7 dias por semana. Estamos sempre prontos para ajudar!
+    </div>
+  </div>
+
+  <p class="faq-cta">Não encontrou sua resposta? Fale conosco!</p>
+  <br>
+  <div style="text-align:center;">
+    <a href="#contato" class="btn-green">Enviar Mensagem</a>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contato" id="contato">
+  <h2 class="section-title">Entre em Contato</h2>
+  <p class="section-sub">Tem dúvidas? Quer fazer um pedido? Preencha o formulário e nossa equipe entrará em contato!</p>
+
+  <div class="contact-card">
+    <input type="text" placeholder="Seu nome completo" />
+    <input type="tel" placeholder="Seu WhatsApp" />
+    <input type="email" placeholder="Seu e-mail" />
+    <textarea placeholder="Sua mensagem ou pedido..."></textarea>
+    <a href="https://wa.me/5511932933912" target="_blank" class="btn-green" style="display:block; text-align:center; padding: 16px; border-radius: 12px; font-size: 16px;">Enviar Mensagem</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="logo-footer">
+    <div class="logo-icon" style="width:40px;height:40px;font-size:15px;">LOD</div>
+    <div>
+      <div class="brand">LOD Suprimentos</div>
+      <div class="sub">Seu rancho na porta de casa</div>
+    </div>
+  </div>
+  <p>Qualidade e praticidade para sua família todos os meses.</p>
+  <div class="copy">© 2024 LOD Suprimentos. Todos os direitos reservados.</div>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a class="whatsapp-float" href="https://wa.me/5511932933912" target="_blank" title="Fale no WhatsApp">💬</a>
+
+<script>
+  function openMenu() { document.getElementById('navMenu').classList.add('open'); }
+  function closeMenu() { document.getElementById('navMenu').classList.remove('open'); }
+
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-arrow').textContent = '▼';
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.querySelector('.faq-arrow').textContent = '▲';
+    }
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+</script>
+</body>
+</html>
