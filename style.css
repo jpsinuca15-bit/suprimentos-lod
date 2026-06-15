@@ -459,28 +459,9 @@ section { padding: 60px 24px; }
 .contact-card {
   background: #fff;
   border-radius: 20px;
-  padding: 28px;
+  padding: 40px 24px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
-
-.contact-card input,
-.contact-card textarea {
-  width: 100%;
-  border: 1.5px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 14px 16px;
-  font-size: 15px;
-  font-family: 'Lato', sans-serif;
-  color: var(--navy);
-  margin-bottom: 14px;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-.contact-card input:focus,
-.contact-card textarea:focus { border-color: var(--green); }
-
-.contact-card textarea { height: 120px; resize: none; }
 
 /* ===== FOOTER ===== */
 footer {
@@ -503,7 +484,7 @@ footer .logo-footer .sub { color: var(--green); font-size: 13px; }
 footer p { font-size: 13px; line-height: 1.8; }
 footer .copy { margin-top: 16px; font-size: 12px; opacity: 0.5; }
 
-/* ===== WHATSAPP FLOAT ===== */
+/* ===== WHATSAPP FLOAT E ÍCONE ===== */
 .whatsapp-float {
   position: fixed;
   bottom: 24px;
@@ -515,14 +496,18 @@ footer .copy { margin-top: 16px; font-size: 12px; opacity: 0.5; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  text-decoration: none;
   z-index: 998;
   transition: transform 0.2s;
 }
 
 .whatsapp-float:hover { transform: scale(1.1); }
+
+.whatsapp-svg {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+}
 
 /* ===== ANIMAÇÕES ===== */
 @keyframes fadeUp {
@@ -533,3 +518,72 @@ footer .copy { margin-top: 16px; font-size: 12px; opacity: 0.5; }
 .hero h1, .hero p, .hero .btn-primary { animation: fadeUp 0.6s ease both; }
 .hero p { animation-delay: 0.1s; }
 .hero .btn-primary { animation-delay: 0.2s; }
+
+/* ===== MODAL ===== */
+.modal-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  display: none;
+  align-items: center; justify-content: center;
+  padding: 16px;
+}
+.modal-overlay.active { display: flex; animation: fadeUp 0.3s ease; }
+
+.modal-content {
+  background: var(--gray-light);
+  width: 100%; max-width: 480px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  max-height: 85vh; 
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+  background: var(--gradient);
+  color: white; padding: 24px;
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+.modal-title-area h3 { font-size: 22px; font-weight: 900; margin-bottom: 4px; color: #fff;}
+.modal-title-area p { font-size: 14px; opacity: 0.9; }
+.modal-close { background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
+
+.modal-body { padding: 20px; overflow-y: auto; flex: 1; }
+
+/* Acordeão do Modal */
+.accordion-item {
+  background: #fff; border-radius: 12px; margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;
+}
+.accordion-header {
+  width: 100%; text-align: left; background: none; border: none;
+  padding: 18px 16px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 16px;
+  color: var(--navy); display: flex; justify-content: space-between; align-items: center;
+  cursor: pointer;
+}
+.accordion-body { padding: 0 16px 16px; }
+.lista-itens { list-style: none; margin-top: 8px;}
+.lista-itens li {
+  padding: 12px 16px; background: var(--gray-light); border-radius: 8px; margin-bottom: 8px;
+  font-size: 15px; color: var(--navy); font-weight: 600;
+}
+
+/* Footer do modal fixo */
+.modal-footer { background: #fff; padding: 20px; border-top: 1px solid #e5e7eb; }
+.modal-total {
+  background: var(--gradient); color: white; padding: 16px; border-radius: 12px;
+  text-align: center; margin-bottom: 16px; box-shadow: 0 4px 12px rgba(34,197,94,0.2);
+}
+.modal-total strong { font-family: 'Nunito', sans-serif; font-size: 20px; font-weight: 900; display: block; margin-bottom: 4px;}
+.modal-total p { font-size: 14px; opacity: 0.9;}
+
+.modal-actions { display: flex; gap: 12px; }
+.modal-actions button, .modal-actions a {
+  flex: 1; padding: 14px; border-radius: 12px; font-family: 'Nunito', sans-serif;
+  font-weight: 800; font-size: 16px; text-align: center; text-decoration: none; cursor: pointer; transition: 0.2s;
+}
+.btn-fechar { background: #e5e7eb; color: var(--navy); border: none; }
+.btn-fechar:hover { background: #d1d5db; }
+.btn-pedir { background: var(--green); color: white; border: none; }
+.btn-pedir:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(34,197,94,0.3); }
